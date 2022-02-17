@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    int page_size = 45;
+    const int page_size = 45, max_word_frequency = 100, N = 20;
     ifstream file("some_book.txt");
     string text = "";
 
@@ -132,8 +132,8 @@ int main()
 
     int i6 = 0;
     print_words_and_pages:
-    if (i6 < 20) {
-        if (words_count[i6] < 100) { 
+    if (i6 < N) {
+        if (words_count[i6] < max_word_frequency) {
             cout << unique_words[i6] << " - ";
             int i7 = 0;
             print_pages:
