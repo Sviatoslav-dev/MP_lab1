@@ -15,7 +15,7 @@ int main() {
     if (!file.eof()) {
         s = "";
         getline(file, s);
-        text += s + '\n';
+        text += s + '\n'; 
         goto read_file;
     }
 
