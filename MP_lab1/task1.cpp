@@ -5,6 +5,7 @@
 using namespace std;
 
 int main() {
+    int stop_words_lengh = 3;
     int N = 25;
     ifstream file("some_text.txt");
     string text = "";
@@ -63,7 +64,7 @@ int main() {
     words_traversal:
     if (words[i3] != "") {
         int i4 = 0;
-        if (words[i3].size() < 4) {
+        if (words[i3].size() <= stop_words_lengh) {
             goto miss_word;
         }
 

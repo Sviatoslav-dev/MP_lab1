@@ -49,7 +49,7 @@ int main()
     bool is_word = false;
     text_traversal:
     if (i1 < text.size()) {
-        if ((text[i1] >= 'a' && text[i1] <= 'z') || (text[i1] >= 'A' && text[i1] <= 'Z') || text[i1] == '\'') {
+        if ((text[i1] >= 'a' && text[i1] <= 'z') || (text[i1] >= 'A' && text[i1] <= 'Z')) {
             is_word = true;
         }
         else {
